@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>SeleccionarSeguroServlet</servlet-name>
+        <servlet-class>Servlets.SeleccionarSeguroServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ModificarPrecioPolizaServlet</servlet-name>
+        <servlet-class>Servlets.ModificarPrecioPolizaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcesarFormularioEstudiantesServlet</servlet-name>
+        <servlet-class>Servlets.ProcesarFormularioEstudiantesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>mostrarDatos</servlet-name>
+        <servlet-class>Servlets.mostrarDatos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SeleccionarSeguroServlet</servlet-name>
+        <url-pattern>/SeleccionarSeguroServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProcesarFormularioViajeServlet</servlet-name>
+        <servlet-class>Servlets.ProcesarFormularioViajeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProcesarFormularioViajeServlet</servlet-name>
+        <url-pattern>/ProcesarFormularioViajeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ModificarPrecioPolizaServlet</servlet-name>
+        <url-pattern>/ModificarPrecioPolizaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcesarFormularioEstudiantesServlet</servlet-name>
+        <url-pattern>/ProcesarFormularioEstudiantesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mostrarDatos</servlet-name>
+        <url-pattern>/mostrarDatos</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+</web-app>

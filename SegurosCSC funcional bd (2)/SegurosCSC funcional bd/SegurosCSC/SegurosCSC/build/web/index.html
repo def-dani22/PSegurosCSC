@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Seguros por Cédula</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Buscar Seguros por Cédula</h2>
+    <form action="MostrarSeguros" method="post">
+        <label for="cedula">Cédula del Cliente:</label>
+        <input type="text" id="cedula" name="cedula" required>
+        <br>
+        <button type="submit">Buscar Seguros</button>
+    </form>
+
+    <!-- Aquí se mostrarán los resultados -->
+    <div id="resultados"></div>
+
+    <script>
+        // Puedes agregar scripts adicionales si es necesario
+    </script>
+</body>
+</html>
